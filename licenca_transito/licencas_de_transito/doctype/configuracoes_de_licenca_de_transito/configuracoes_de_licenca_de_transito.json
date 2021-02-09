@@ -1,0 +1,51 @@
+{
+ "creation": "2020-11-30 10:56:53.574055",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "grupo_item_licenca_transito",
+  "company"
+ ],
+ "fields": [
+  {
+   "fieldname": "grupo_item_licenca_transito",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Grupo de Itens das Licen\u00e7as de Tr\u00e2nsito",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "default": "company.name",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "company",
+   "options": "Company",
+   "reqd": 1
+  }
+ ],
+ "issingle": 1,
+ "modified": "2021-01-21 08:55:00.580891",
+ "modified_by": "Administrator",
+ "module": "Licencas de Transito",
+ "name": "Configuracoes de Licenca de Transito",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

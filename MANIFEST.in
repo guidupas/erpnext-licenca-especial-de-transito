@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include licenca_transito *.css
+recursive-include licenca_transito *.csv
+recursive-include licenca_transito *.html
+recursive-include licenca_transito *.ico
+recursive-include licenca_transito *.js
+recursive-include licenca_transito *.json
+recursive-include licenca_transito *.md
+recursive-include licenca_transito *.png
+recursive-include licenca_transito *.py
+recursive-include licenca_transito *.svg
+recursive-include licenca_transito *.txt
+recursive-exclude licenca_transito *.pyc

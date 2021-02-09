@@ -1,0 +1,135 @@
+{
+ "autoname": "LNC-AET-.DD.-.MM.-.YYYY.-.######",
+ "creation": "2020-11-30 11:28:24.772134",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pedido_de_venda",
+  "cliente",
+  "quebra_de_coluna_1_column",
+  "empresa",
+  "sessao_email_notificacao_section",
+  "contato_notificacao_vencimento",
+  "quebra_coluna_conf_email_column",
+  "email_notificacao_vencimento",
+  "secao_licencas_section_section",
+  "autorizacoes_de_transito",
+  "qtde_autorizacoes",
+  "amended_from",
+  "company"
+ ],
+ "fields": [
+  {
+   "fieldname": "pedido_de_venda",
+   "fieldtype": "Link",
+   "label": "Pedido de Venda",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Autorizacao Especial de Transito",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "pedido_de_venda.customer",
+   "fieldname": "cliente",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cliente",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quebra_de_coluna_1_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "empresa",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Para a Empresa",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "secao_licencas_section_section",
+   "fieldtype": "Section Break",
+   "label": "Lan\u00e7amento de Autoriza\u00e7\u00f5es"
+  },
+  {
+   "fieldname": "autorizacoes_de_transito",
+   "fieldtype": "Table",
+   "label": "Itens da Autoriza\u00e7\u00e3o de Tr\u00e2nsito",
+   "options": "Itens da Autorizacao de Transito",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "qtde_autorizacoes",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantidade de Itens",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "company.name",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sessao_email_notificacao_section",
+   "fieldtype": "Section Break",
+   "label": "Configura\u00e7\u00e3o de notifica\u00e7\u00e3o de vencimento de AET"
+  },
+  {
+   "fieldname": "contato_notificacao_vencimento",
+   "fieldtype": "Link",
+   "label": "Contato de notifica\u00e7\u00e3o",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "email_notificacao_vencimento",
+   "fieldtype": "Data",
+   "label": "E-mail de notifica\u00e7\u00e3o",
+   "options": "Email"
+  },
+  {
+   "fieldname": "quebra_coluna_conf_email_column",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-01-07 13:59:13.080731",
+ "modified_by": "Administrator",
+ "module": "Licencas de Transito",
+ "name": "Autorizacao Especial de Transito",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

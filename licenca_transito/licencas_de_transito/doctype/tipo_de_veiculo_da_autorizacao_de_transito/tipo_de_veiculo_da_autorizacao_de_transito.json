@@ -1,0 +1,54 @@
+{
+ "autoname": "format:VEI-{tipo_veiculo}-{####}",
+ "creation": "2020-11-30 11:05:14.666759",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tipo_veiculo",
+  "company"
+ ],
+ "fields": [
+  {
+   "fieldname": "tipo_veiculo",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tipo de Ve\u00edculo",
+   "reqd": 1
+  },
+  {
+   "default": "company.name",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  }
+ ],
+ "modified": "2020-12-15 09:48:19.428323",
+ "modified_by": "Administrator",
+ "module": "Licencas de Transito",
+ "name": "Tipo de Veiculo da Autorizacao de Transito",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
