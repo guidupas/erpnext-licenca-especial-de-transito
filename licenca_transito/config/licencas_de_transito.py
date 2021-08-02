@@ -8,6 +8,18 @@ def get_data():
             "items": [
                 {
                     "type": "doctype",
+                    "name": "Customer",
+                    "label": _("Customer"),
+                    "onboard": 1,
+                },
+                {
+                    "type": "doctype",
+                    "name": "Emissao de Autorizacao Especial de Transito",
+                    "label": _("Emissão de Autorização Especial de Trânsito"),
+                    "onboard": 1,
+                },
+                {
+                    "type": "doctype",
                     "name": "Autorizacao Especial de Transito",
                     "label": _("Autorização Especial de Trânsito"),
                     "onboard": 1,
