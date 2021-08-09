@@ -18,18 +18,6 @@ def get_data():
                     "label": _("Emissão de Autorização Especial de Trânsito"),
                     "onboard": 1,
                 },
-                {
-                    "type": "doctype",
-                    "name": "Autorizacao Especial de Transito",
-                    "label": _("Autorização Especial de Trânsito"),
-                    "onboard": 1,
-                },
-                {
-                    "type": "doctype",
-                    "name": "Verificacao individual de AET",
-                    "label": _("Verificação individual de AET"),
-                    "onboard": 1,
-                },
             ]
         },
         {
