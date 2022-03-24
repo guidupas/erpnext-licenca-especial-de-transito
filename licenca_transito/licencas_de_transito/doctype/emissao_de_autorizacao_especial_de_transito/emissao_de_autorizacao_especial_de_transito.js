@@ -33,8 +33,10 @@ frappe.ui.form.on('Emissao de Autorizacao Especial de Transito', {
 		if(frm.is_new() && !frm.doc.amended_from) {
 			frm.set_value('numero_autorizacao', '');
 			frm.set_value('vencimento_autorizacao', '');
+			frm.set_value('pedido_de_venda');
 			frm.refresh_field('numero_autorizacao');
 			frm.refresh_field('vencimento_autorizacao');
+			frm.refresh_field('pedido_de_venda');
 		}
 
 		if(frm.doc.docstatus == 1) {
@@ -115,7 +117,7 @@ function retorna_doc(argumentos) {
 function atualiza_query_contato_notificacao(frm) {
 	frm.set_query('contato_notificacao_vencimento', function() {
 		return {
-			query: 'licenca_transito.licencas_de_transito.doctype.autorizacao_especial_de_transito.autorizacao_especial_de_transito.filtrar_contacts_empresa',
+			query: 'licenca_transito.licencas_de_transito.doctype.emissao_de_autorizacao_especial_de_transito.emissao_de_autorizacao_especial_de_transito.filtrar_contacts_empresa',
 			filters: {
 				'customer': frm.doc.cliente,
 			}
@@ -208,8 +210,10 @@ function retorna_preco_item(item, company) {
 					}
 				};
 
-				var preco_item_doctype = retorna_doc(argumentos_retorno_doc);
-				valor_item = preco_item_doctype.price_list_rate
+				if(preco_item_doctype != null) {
+					var preco_item_doctype = retorna_doc(argumentos_retorno_doc);
+					valor_item = preco_item_doctype.price_list_rate
+				}
 			}
 		}
 	});

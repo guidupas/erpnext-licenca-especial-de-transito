@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "E-AET-.DD.-.MM.-.YYYY.-.######",
  "creation": "2021-07-30 14:49:35.562498",
  "doctype": "DocType",
@@ -121,7 +122,6 @@
    "options": "Tipo de Veiculo da Autorizacao de Transito"
   },
   {
-   "default": "company.name",
    "fieldname": "company",
    "fieldtype": "Link",
    "hidden": 1,
@@ -161,7 +161,8 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2021-08-05 18:12:22.639517",
+ "links": [],
+ "modified": "2022-03-17 16:32:09.852678",
  "modified_by": "Administrator",
  "module": "Licencas de Transito",
  "name": "Emissao de Autorizacao Especial de Transito",
