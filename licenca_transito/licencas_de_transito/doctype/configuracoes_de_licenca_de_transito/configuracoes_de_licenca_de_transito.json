@@ -1,10 +1,13 @@
 {
+ "actions": [],
  "creation": "2020-11-30 10:56:53.574055",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "grupo_item_licenca_transito",
+  "quebra_coluna_1_column",
+  "grupo_de_itens_das_taxas_de_licen\u00e7as_de_tr\u00e2nsito",
   "company"
  ],
  "fields": [
@@ -24,10 +27,23 @@
    "label": "company",
    "options": "Company",
    "reqd": 1
+  },
+  {
+   "fieldname": "grupo_de_itens_das_taxas_de_licen\u00e7as_de_tr\u00e2nsito",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Grupo de Itens das Taxas de Licen\u00e7as de Tr\u00e2nsito",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quebra_coluna_1_column",
+   "fieldtype": "Column Break"
   }
  ],
  "issingle": 1,
- "modified": "2021-01-21 08:55:00.580891",
+ "links": [],
+ "modified": "2022-09-22 09:05:39.104851",
  "modified_by": "Administrator",
  "module": "Licencas de Transito",
  "name": "Configuracoes de Licenca de Transito",

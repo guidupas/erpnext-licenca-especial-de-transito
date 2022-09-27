@@ -34,6 +34,15 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Supplier",
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Emiss\u00e3o de Autoriza\u00e7\u00e3o Especial de Tr\u00e2nsito",
    "link_to": "Emissao de Autorizacao Especial de Transito",
    "link_type": "DocType",
@@ -67,8 +76,8 @@
    "type": "Link"
   }
  ],
- "modified": "2022-03-17 07:27:35.246628",
- "modified_by": "Administrator",
+ "modified": "2022-09-22 08:58:15.388255",
+ "modified_by": "guidupas@gmail.com",
  "module": "Licencas de Transito",
  "name": "Licen\u00e7as de Tr\u00e2nsito",
  "owner": "Administrator",

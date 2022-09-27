@@ -21,10 +21,15 @@
   "tipo_veiculo",
   "situacao_aet",
   "informa\u00e7\u00e3o_sobre_taxa_de_emiss\u00e3o_section",
+  "gerar_pagamento_de_taxa_de_emiss\u00e3o",
+  "column_break_17",
   "taxa_de_emissao",
+  "fornecedor",
   "section_break_17",
   "observacoes",
   "pedido_de_venda",
+  "column_break_22",
+  "pedido_de_compra",
   "company",
   "amended_from"
  ],
@@ -158,11 +163,39 @@
    "fieldtype": "Link",
    "label": "Taxa de Emiss\u00e3o",
    "options": "Item"
+  },
+  {
+   "fieldname": "fornecedor",
+   "fieldtype": "Link",
+   "label": "Fornecedor",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "pedido_de_compra",
+   "fieldtype": "Link",
+   "label": "Pedido de Compra",
+   "options": "Purchase Order",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "gerar_pagamento_de_taxa_de_emiss\u00e3o",
+   "fieldtype": "Check",
+   "label": "Gerar pagamento de taxa de emiss\u00e3o"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2022-03-17 16:32:09.852678",
+ "modified": "2022-09-26 09:36:05.522019",
  "modified_by": "Administrator",
  "module": "Licencas de Transito",
  "name": "Emissao de Autorizacao Especial de Transito",
