@@ -88,6 +88,14 @@ frappe.ui.form.on('Emissao de Autorizacao Especial de Transito', {
 		} else if(frm.doc.situacao_aet != "Liberada" && frm.doc.situacao_aet != "Errada" && frm.doc.situacao_aet != "Cancelada") {
 			frappe.validated = false;
 			msgprint("A autorização não está concluída. Verifique a situação da autorização");
+		} else if(frm.doc.gerar_pagamento_de_taxa_de_emissão == 1) {
+			if(!frm.doc.fornecedor) {
+				frappe.validated = false;
+				msgprint("Informe fornecedor");
+			} else if(!frm.doc.taxa_de_emissao) {
+				frappe.validated = false;
+				msgprint("Informe taxa de emissão");
+			}
 		}
 	},
 
