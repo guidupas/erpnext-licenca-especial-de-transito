@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-24 07:58:33.816063",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "infoma\u00e7\u00f5es_da_aet_section",
+  "para_empresa",
+  "transportadora",
+  "column_break_2",
+  "autorizacao_de_transito",
+  "placa_veiculo_aet",
+  "numero_aet",
+  "vencimento_da_aet",
+  "tipo_veiculo_aet",
+  "situacao_aet",
+  "informacao_sobre_taxa_de_emissao_section",
+  "gerar_pagamento_de_taxa_de_emissao_aet",
+  "column_break_12",
+  "taxa_de_emissao_aet",
+  "fornecedor_aet",
+  "section_break_15",
+  "observacoes",
+  "section_break_17",
+  "pedido_de_venda_aet",
+  "column_break_18",
+  "pedido_de_compra_aet",
+  "aet_confirmada"
+ ],
+ "fields": [
+  {
+   "fieldname": "para_empresa",
+   "fieldtype": "Link",
+   "label": "Para a Empresa",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transportadora",
+   "fieldtype": "Link",
+   "label": "Transportadora",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "vencimento_da_aet",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Vencimento da AET"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "placa_veiculo_aet",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Placa do Ve\u00edculo"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "tipo_veiculo_aet",
+   "fieldtype": "Link",
+   "label": "Tipo de Ve\u00edculo",
+   "options": "Tipo de Veiculo da Autorizacao de Transito"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "situacao_aet",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Situa\u00e7\u00e3o da AET",
+   "options": "Solicitada\nEm An\u00e1lise\nAguardando Documenta\u00e7\u00e3o\nAguardando Libera\u00e7\u00e3o\nLiberada\nCancelada\nErrada"
+  },
+  {
+   "fieldname": "infoma\u00e7\u00f5es_da_aet_section",
+   "fieldtype": "Section Break",
+   "label": "Infoma\u00e7\u00f5es da AET"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fornecedor_aet",
+   "fieldtype": "Link",
+   "label": "Fornecedor",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "observacoes",
+   "fieldtype": "Long Text",
+   "label": "Observa\u00e7\u00f5es"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "pedido_de_venda_aet",
+   "fieldtype": "Link",
+   "label": "Pedido de Venda",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "pedido_de_compra_aet",
+   "fieldtype": "Link",
+   "label": "Pedido de Compra",
+   "options": "Purchase Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "gerar_pagamento_de_taxa_de_emissao_aet",
+   "fieldtype": "Check",
+   "label": "Gerar pagamento de taxa de emiss\u00e3o"
+  },
+  {
+   "fieldname": "taxa_de_emissao_aet",
+   "fieldtype": "Link",
+   "label": "Taxa de Emiss\u00e3o",
+   "options": "Item"
+  },
+  {
+   "fieldname": "autorizacao_de_transito",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Autoriza\u00e7\u00e3o de Tr\u00e2nsito",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "informacao_sobre_taxa_de_emissao_section",
+   "fieldtype": "Section Break",
+   "label": "Informa\u00e7\u00e3o Sobre Taxa de Emiss\u00e3o"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "numero_aet",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "N\u00famero da aet"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "aet_confirmada",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "AET Confirmada",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-02 08:59:55.970024",
+ "modified_by": "Administrator",
+ "module": "Licencas de Transito",
+ "name": "Itens Emissao de Autorizacao Especial de Transito",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
