@@ -20,13 +20,12 @@
    "reqd": 1
   },
   {
-   "default": "company.name",
    "fieldname": "company",
    "fieldtype": "Link",
    "hidden": 1,
    "label": "company",
    "options": "Company",
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fieldname": "grupo_de_itens_das_taxas_de_licen\u00e7as_de_tr\u00e2nsito",
@@ -43,7 +42,7 @@
  ],
  "issingle": 1,
  "links": [],
- "modified": "2022-09-22 09:05:39.104851",
+ "modified": "2022-11-07 11:32:36.799995",
  "modified_by": "Administrator",
  "module": "Licencas de Transito",
  "name": "Configuracoes de Licenca de Transito",
