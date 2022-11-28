@@ -7,7 +7,6 @@
  "engine": "InnoDB",
  "field_order": [
   "infoma\u00e7\u00f5es_da_aet_section",
-  "para_empresa",
   "transportadora",
   "column_break_2",
   "autorizacao_de_transito",
@@ -30,13 +29,6 @@
   "aet_confirmada"
  ],
  "fields": [
-  {
-   "fieldname": "para_empresa",
-   "fieldtype": "Link",
-   "label": "Para a Empresa",
-   "options": "Customer",
-   "reqd": 1
-  },
   {
    "fieldname": "column_break_2",
    "fieldtype": "Column Break"
@@ -170,7 +162,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-11-02 08:59:55.970024",
+ "modified": "2022-11-28 07:37:45.654244",
  "modified_by": "Administrator",
  "module": "Licencas de Transito",
  "name": "Itens Emissao de Autorizacao Especial de Transito",
